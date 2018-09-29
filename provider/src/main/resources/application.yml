@@ -1,0 +1,45 @@
+debug: true
+demo:
+  service:
+    version: 1.0.0
+dubbo:
+  application:
+    id: dubbo-provider-demo
+    name: dubbo-provider-demo
+    qos:
+      enable: true
+      port: 22222
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 12345
+    status: server
+  registry:
+#    配置是否使用注册中心
+#    address: zookeeper://127.0.0.1:2181
+    address: N/A
+    id: my-registry
+  scan:
+    basePackages: com.mss.contact.service
+management:
+  endpoint:
+    dubbo:
+      enabled: true
+    dubbo-configs:
+      enabled: true
+    dubbo-properties:
+      enabled: true
+    dubbo-references:
+      enabled: true
+    dubbo-services:
+      enabled: true
+    dubbo-shutdown:
+      enabled: true
+  health:
+    dubbo:
+      status:
+        defaults: memory
+        extras: load,threadpool
+spring:
+  application:
+    name: dubbo-provider-demo
