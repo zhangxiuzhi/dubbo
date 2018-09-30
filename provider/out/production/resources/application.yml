@@ -21,6 +21,8 @@ dubbo:
     id: my-registry
   scan:
     basePackages: com.mss.contact.service
+  provider:
+    filter: traceFilter
 management:
   endpoint:
     dubbo:
