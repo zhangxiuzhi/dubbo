@@ -1,4 +1,3 @@
-debug: true
 demo:
   service:
     version: 1.0.0
@@ -44,4 +43,4 @@ management:
         extras: load,threadpool
 spring:
   application:
-    name: dubbo-provider-demo
+    name: dubbo-provider

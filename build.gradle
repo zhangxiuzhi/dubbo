@@ -42,12 +42,12 @@ subprojects {
 
 
 
-        compile "io.zipkin.brave:brave:${braveVersion}"
-        compile "io.zipkin.brave:brave-spring-beans:${braveVersion}"
-        compile "io.zipkin.brave:brave-context-log4j12:${braveVersion}"
+//        compile "io.zipkin.brave:brave:${braveVersion}"
+//        compile "io.zipkin.brave:brave-spring-beans:${braveVersion}"
+//        compile "io.zipkin.brave:brave-context-log4j12:${braveVersion}"
         compile "io.zipkin.brave:brave-instrumentation-dubbo-rpc:${braveVersion}"
-        compile "io.zipkin.brave:brave-instrumentation-spring-web:${braveVersion}"
-        compile "io.zipkin.brave:brave-instrumentation-spring-webmvc:${braveVersion}"
+//        compile "io.zipkin.brave:brave-instrumentation-spring-web:${braveVersion}"
+//        compile "io.zipkin.brave:brave-instrumentation-spring-webmvc:${braveVersion}"
         
 
     }
