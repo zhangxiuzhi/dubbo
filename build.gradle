@@ -12,6 +12,7 @@ buildscript {
 }
 
 ext {
+    springCloudVersion = 'Finchley.SR1'
     braveVersion = '5.1.4'
 }
 
@@ -35,8 +36,11 @@ subprojects {
     dependencies {
         compile('com.alibaba:fastjson:1.2.47')
         compile('io.netty:netty-all:4.1.24.Final')
+//        compile 'com.kite.zipkin:dubbo-zipkin-spring-starter:1.0.0'
         compile('org.apache.commons:commons-lang3:3.7')
         compile 'com.alibaba.boot:dubbo-spring-boot-starter:0.2.0'
+
+
 
         compile "io.zipkin.brave:brave:${braveVersion}"
         compile "io.zipkin.brave:brave-spring-beans:${braveVersion}"
