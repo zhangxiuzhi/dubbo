@@ -18,6 +18,7 @@ dubbo:
     id: my-registry1
   consumer:
     filter: traceFilter
+    lazy: true
 endpoints:
   dubbo:
     enabled: true
